@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; display: none;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --background-color: hsl(47, 88%, 63%);
+      --container-background-clr: hsl(0, 0%, 100%);
+      --gray-500: hsl(0, 0%, 42%);
+      --gray-950: hsl(0, 0%, 7%);
+      --font-family: 'Figtree';
+      --weight-heavy: 800;
+      --weight-light: 500;
+      --font-def: 16px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: var(--weight-heavy);
+    }
+
+    p {
+      color: var(--gray-500);
+    }
+
+    main {
+      background-color: var(--background-color);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    main .container {
+      font-family: var(--font-family);
+      display: flex;
+      flex-direction: column;
+      background-color: var(--container-background-clr);
+      max-width: 375px;
+      padding: 20px;
+      border-radius: 15px;
+      gap: 18px;
+      box-shadow: 9px 9px 0px black;
+      border: 2px solid black;
+    }
+
+    main .container img {
+      border-radius: 15px;
+    }
+
+    main .container button {
+      border: none;
+      padding: 8px 13px;
+      align-self: baseline;
+      font-weight: 800;
+      border-radius: 5px;
+      background-color: var(--background-color);
+      font-size: 14px;
+    }
+
+    main .container .publish {
+      font-weight: var(--weight-light);
+      color: black;
+    }
+
+    main .container .profile {
+      display: flex;
+      align-items: center;
+    }
+
+    main .profile img {
+      width: 35px;
+    }
+
+    main .profile .profile-name {
+      display: flex;
+      font-weight: var(--weight-heavy);
+      color: black;
+      padding: 0 0 0 10px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <img src="/assets/images/illustration-article.svg" alt="an image of illustration">
+      <button>Learning</button>
+
+      <p><span class="publish">Published 21 Dec 2023</span></p>
+
+      <h1>HTML & CSS foundations</h1>
+
+      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+      <div class="profile">
+        <img src="/assets/images/image-avatar.webp" alt="an profile image">
+        <p><span class="profile-name">Greg Hooper</span></p>
+      </div>
+    </div>
+  </main>
+
+  <!--This footer is disabled-->
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+</body>
+</html>
